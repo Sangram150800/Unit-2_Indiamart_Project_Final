@@ -529,6 +529,20 @@ a{
 }
 
 
+#sortNames{
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #FFE4C4;
+}
+
+#sortPrices{
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 8px;
+    background-color: #FFE4C4;
+}
+
+
 </style>
 </head>
 <body>
@@ -634,6 +648,23 @@ a{
     </div>
     <div class="likhnewala">
         <h2>Mens Wear</h2>
+
+        <div>
+            <select id="sortNames" onChange="handleNameSort()">
+                <option value="">Sort by Name</option>
+                <option value="Ascending">Ascending</option>
+                <option value="Descending">Descending</option>
+            </select>
+        
+            <select id="sortPrices" onChange="handlePriceSort()">
+                <option value="">Sort by Price</option>
+                <option value="Ascending">Low to High</option>
+                <option value="Descending">High to Low</option>
+            </select>
+        
+        </div>
+
+
     </div>
     </div>
 
@@ -978,7 +1009,7 @@ var homedecordata=[
 ]
     
 var cartData=JSON.parse(localStorage.getItem("cart")) || [];
-    griddata.map(function(elem){
+griddata.map(function(elem){
         var dibba=document.createElement("div")
         dibba.setAttribute("id","sabhipicshai")
       
@@ -1012,6 +1043,202 @@ function hitme(elem){
          localStorage.setItem("cart",JSON.stringify(cartData))
          alert("Item Added to Cart")
 }
+
+
+function handleNameSort(){
+    var selected=document.querySelector("#sortNames").value
+    console.log(selected)
+    if(selected=="Ascending"){
+        flexdata.sort(function(a,b){
+            if(a.name>b.name) return 1
+            if(a.name<b.name) return -1
+            return 0
+        })
+        document.querySelector("#panchwala").innerHTML=""
+        console.log(flexdata)
+        var cartData=JSON.parse(localStorage.getItem("cart")) || [];
+    flexdata.map(function(elem){
+        var dibba=document.createElement("div")
+        dibba.setAttribute("id","flexwalipics")
+      
+        var image=document.createElement("img")
+        image.src=elem.image_url
+        image.setAttribute("class","onlyimage")
+        
+        var Name=document.createElement("p")
+        Name.innerText=elem.name;
+
+        var COmpanyname=document.createElement("p")
+        COmpanyname.innerText=elem.company;
+
+        var daam=document.createElement("h4")
+        daam.innerText=elem.price;
+
+        var flop=document.createElement("button")
+        flop.innerText="Add to cart"
+        flop.setAttribute("class","addme")
+        flop.addEventListener("click",function(){
+            hitme(elem);
+        })
+        dibba.append(image,Name,COmpanyname,daam,flop);
+        document.querySelector("#panchwala").append(dibba)
+
+    })
+
+
+    }
+    if(selected=="Descending"){
+        flexdata.sort(function(a,b){
+            if(a.name<b.name) return 1
+            if(a.name>b.name) return -1
+            return 0
+    })
+    document.querySelector("#panchwala").innerHTML=""
+    console.log(flexdata)
+    var cartData=JSON.parse(localStorage.getItem("cart")) || [];
+    flexdata.map(function(elem){
+        var dibba=document.createElement("div")
+        dibba.setAttribute("id","flexwalipics")
+      
+        var image=document.createElement("img")
+        image.src=elem.image_url
+        image.setAttribute("class","onlyimage")
+        
+        var Name=document.createElement("p")
+        Name.innerText=elem.name;
+
+        var COmpanyname=document.createElement("p")
+        COmpanyname.innerText=elem.company;
+
+        var daam=document.createElement("h4")
+        daam.innerText=elem.price;
+
+        var flop=document.createElement("button")
+        flop.innerText="Add to cart"
+        flop.setAttribute("class","addme")
+        flop.addEventListener("click",function(){
+            hitme(elem);
+        })
+        dibba.append(image,Name,COmpanyname,daam,flop);
+        document.querySelector("#panchwala").append(dibba)
+
+    })
+}
+}
+
+
+
+
+function handlePriceSort(){
+    var selected=document.querySelector("#sortPrices").value
+    console.log(selected)
+    if(selected=="Ascending"){
+        flexdata.sort(function(a,b){
+            if(a.price>b.price) return 1
+            if(a.price<b.price) return -1
+            return 0
+        })
+        document.querySelector("#panchwala").innerHTML=""
+        console.log(flexdata)
+        var cartData=JSON.parse(localStorage.getItem("cart")) || [];
+    flexdata.map(function(elem){
+        var dibba=document.createElement("div")
+        dibba.setAttribute("id","flexwalipics")
+      
+        var image=document.createElement("img")
+        image.src=elem.image_url
+        image.setAttribute("class","onlyimage")
+        
+        var Name=document.createElement("p")
+        Name.innerText=elem.name;
+
+        var COmpanyname=document.createElement("p")
+        COmpanyname.innerText=elem.company;
+
+        var daam=document.createElement("h4")
+        daam.innerText=elem.price;
+
+        var flop=document.createElement("button")
+        flop.innerText="Add to cart"
+        flop.setAttribute("class","addme")
+        flop.addEventListener("click",function(){
+            hitme(elem);
+        })
+        dibba.append(image,Name,COmpanyname,daam,flop);
+        document.querySelector("#panchwala").append(dibba)
+
+    })
+
+
+    }
+    if(selected=="Descending"){
+        flexdata.sort(function(a,b){
+            if(a.price<b.price) return 1
+            if(a.price>b.price) return -1
+            return 0
+    })
+    document.querySelector("#panchwala").innerHTML=""
+    console.log(flexdata)
+    var cartData=JSON.parse(localStorage.getItem("cart")) || [];
+    flexdata.map(function(elem){
+        var dibba=document.createElement("div")
+        dibba.setAttribute("id","flexwalipics")
+      
+        var image=document.createElement("img")
+        image.src=elem.image_url
+        image.setAttribute("class","onlyimage")
+        
+        var Name=document.createElement("p")
+        Name.innerText=elem.name;
+
+        var COmpanyname=document.createElement("p")
+        COmpanyname.innerText=elem.company;
+
+        var daam=document.createElement("h4")
+        daam.innerText=elem.price;
+
+        var flop=document.createElement("button")
+        flop.innerText="Add to cart"
+        flop.setAttribute("class","addme")
+        flop.addEventListener("click",function(){
+            hitme(elem);
+        })
+        dibba.append(image,Name,COmpanyname,daam,flop);
+        document.querySelector("#panchwala").append(dibba)
+
+    })
+}
+}
+ 
+var cartData=JSON.parse(localStorage.getItem("cart")) || [];
+    flexdata.map(function(elem){
+        var dibba=document.createElement("div")
+        dibba.setAttribute("id","flexwalipics")
+      
+        var image=document.createElement("img")
+        image.src=elem.image_url
+        image.setAttribute("class","onlyimage")
+        
+        var Name=document.createElement("p")
+        Name.innerText=elem.name;
+
+        var COmpanyname=document.createElement("p")
+        COmpanyname.innerText=elem.company;
+
+        var daam=document.createElement("h4")
+        daam.innerText=elem.price;
+
+        var flop=document.createElement("button")
+        flop.innerText="Add to cart"
+        flop.setAttribute("class","addme")
+        flop.addEventListener("click",function(){
+            hitme(elem);
+        })
+        dibba.append(image,Name,COmpanyname,daam,flop);
+        document.querySelector("#panchwala").append(dibba)
+
+    })
+
 var cartData=JSON.parse(localStorage.getItem("cart")) || [];
     flexdata.map(function(elem){
         var dibba=document.createElement("div")
