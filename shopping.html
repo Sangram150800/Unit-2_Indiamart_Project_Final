@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+<style>
+    *{
+        font-family: arial
+    }
+    #naVbar>div:first-child{
+ display: flex;
+ width: 25%;
+
+ height: auto;
+    }
+    #naVbar>div:first-child>img{
+      margin-top: 14px;
+        height: 50%;
+    }
+    #naVbar{
+        display: flex;
+   
+        height: 80px;
+        width: 1250px;
+        margin: auto;
+       justify-content: space-between;
+       position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    background-color: white;
+    }
+    img+div>h2{
+        color: gray;
+        font-size: 25px;
+    font-weight: 400;
+    margin-top: 25px;
+ }
+    #last{
+      width: 16%;
+        color: white;
+        background-color: rgb(46,49,146);
+        height: 70%;
+        border-radius: 7px;
+        font-size: 16px;
+    font-weight: 400;
+text-align:center;
+box-sizing: border-box;
+margin-top: 10px;
+        }
+        button[type="submit"] {
+background-color: rgb(42,100,98);
+color: white;
+height: 60px;
+width: 120px;
+border-radius: 7px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+        }
+        input{
+            border: 1px solid white;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        input[type="text"]{
+            opacity: 1;
+         width: 510px;
+         margin-top: 10px;
+         height: 60px;
+        border-radius: 7px;
+     }
+        .unit { 
+  position: absolute; 
+  display: block; 
+  margin-top: 31px; 
+  margin-left: 10px;
+   
+}
+input[type='text']::placeholder
+    {   
+       padding-left: 70px;
+       font-size: 17px; 
+        /* for Chrome, Firefox, Opera */ /* anotherrone*/
+    }
+    .vertical {
+            border-left: 1px solid gray;
+            height: 40px;
+            margin-left: 45px;
+            margin-top: -31px;
+       }
+#wears{
+    display: flex;
+      
+        height: 140px;
+        width: 1200px;
+        margin: auto;
+       justify-content: space-between;
+       margin-top: 50px;
+}
+#wears>div{
+
+width: 10%;
+height:100%;
+margin: 5px;
+text-align: center;
+
+
+
+}
+.round{
+    display: flex;
+   justify-content: center;
+align-items: center;
+box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+border-radius:200% ;
+height: 45%;
+margin-left: 20px;
+width: 65px;
+}
+.round>img{
+    height: 30px;
+}
+#Picles{
+        width: 1190px;
+        display: flex;
+      
+         
+        margin: auto;
+        margin-top: 30px; 
+        height: auto; 
+}
+.uparka{
+    height: auto;
+    display: flex;
+    width: 1190px;
+    margin: auto;
+    margin-top: 20px;
+  
+
+}
+.Logowala{
+    display: flex;
+   justify-content: center;
+align-items: center;
+box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+border-radius:200%;
+width: 60px;
+
+}
+.likhnewala{
+    margin-left: 10px;
+}
+#eigthwala{
+   
+  margin-top:15px;
+    margin: auto;
+
+   width:1150px;
+   height:970px;
+   display: grid; 
+   grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,300px);
+    grid-template-areas: 
+    "a b c c d"
+    "e e c c f"
+    "e e g h 0"
+;    
+}
+#eigthwala>div{
+
+margin: 10px;
+text-align: left;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+
+
+}
+#eigthwala>div:nth-child(1){
+grid-area: a;
+height: 320px;
+}
+#eigthwala>div:nth-child(2){
+grid-area: b;
+height: 320px;
+}
+#eigthwala>div:nth-child(3){
+grid-area: c;
+height: 540px;
+
+
+}
+#eigthwala>div:nth-child(4){
+grid-area: d;
+height: 290px;
+
+}
+#eigthwala>div:nth-child(5){
+grid-area: e;
+height: 540px;
+margin-top: 70px;
+
+}
+#eigthwalai>div:nth-child(6){
+grid-area: f;
+height: 320px;
+margin-top: 80px;
+}
+#eigthwala>div:nth-child(7){
+grid-area: g;
+margin-top: -20px;
+height: 290px;
+}
+#eigthwala>div:nth-child(8){
+    grid-area: h;
+    margin-top: -20px;
+    height: 290px;
+} 
+#eigthwala+button{
+    margin-left: 650px;
+    height: 50px;
+    width: 150px;
+    font-size: 17px;
+border:1px solid gray ;
+   border-radius: 8px;
+}
+
+#shoeseigthwala{
+    margin-top:25px;
+    margin: auto;
+
+   width:1150px;
+   height:auto;
+   display: grid; 
+   grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,300px);
+    grid-template-areas: 
+    "a b c c d"
+    "e e c c f"
+    "e e g h 0"
+;    
+}
+#sabhipicshaishoeski{
+
+margin: 10px;
+text-align: left;
+height: 400px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+
+
+}
+#shoeseigthwala>div:nth-child(1){
+grid-area: a;
+height: 400px;
+}
+#shoeseigthwala>div:nth-child(2){
+grid-area: b;
+height: 400px;
+}
+#shoeseigthwala>div:nth-child(3){
+grid-area: c;
+height: 540px;
+
+
+}
+#shoeseigthwala>div:nth-child(4){
+grid-area: d;
+height: 200px;
+
+}
+#shoeseigthwala>div:nth-child(5){
+grid-area: e;
+height: 500px;
+margin-top: 120px;
+
+}
+#shoeseigthwala>div:nth-child(6){
+grid-area: f;
+height: 400px;
+margin-top: 95px;
+}
+#shoeseigthwala>div:nth-child(7){
+grid-area: g;
+margin-top: -20px;
+height: 410px;
+}
+#shoeseigthwala>div:nth-child(8){
+    grid-area: h;
+    margin-top: -20px;
+    height: 400px;
+} 
+#shoeseigthwala+button{
+    margin-left: 650px;
+    height: 50px;
+    width: 150px;
+    font-size: 17px;
+border:1px solid gray ;
+   border-radius: 8px;
+   margin-top: 120px;
+}
+#gridmobile{
+    margin-top:25px;
+    margin: auto;
+
+   width:1150px;
+   height:auto;
+   display: grid; 
+   grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,300px);
+    grid-template-areas: 
+    "a b c c d"
+    "e e c c f"
+    "e e g h 0"   
+    ;                         
+}
+#sabhipicshaimobileki{
+
+margin: 10px;
+text-align: left;
+height: 400px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+
+
+}
+#gridmobile>div:nth-child(1){
+grid-area: a;
+height: 400px;
+}
+#gridmobile>div:nth-child(2){
+grid-area: b;
+height: 400px;
+}
+#gridmobile>div:nth-child(3){
+grid-area: c;
+height: 540px;
+
+
+}
+#gridmobile>div:nth-child(4){
+grid-area: d;
+height: 200px;
+
+}
+#gridmobile>div:nth-child(5){
+grid-area: e;
+height: 500px;
+margin-top: 120px;
+
+}
+#gridmobile>div:nth-child(6){
+grid-area: f;
+height: 430px;
+margin-top:130px;
+}
+#gridmobile>div:nth-child(7){
+grid-area: g;
+margin-top: -20px;
+height: 420px;
+}
+#gridmobile>div:nth-child(8){
+    grid-area: h;
+    margin-top: -20px;
+    height: 420px;
+} 
+#gridmobile+button{
+    margin-left: 650px;
+    height: 50px;
+    width: 150px;
+    font-size: 17px;
+border:1px solid gray ;
+   border-radius: 8px;
+   margin-top: 120px;
+}
+
+
+.onlyimage{
+    margin: auto;
+   width:100%;
+  height: 70%;
+ 
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+} 
+.onlyimage>img{
+   
+    width: 80%;
+    height: 100%;
+} 
+
+p+p{
+    font-size: 13px;
+    margin-top: -12px;
+    
+}
+p+h4{
+    color: blue;
+    margin-top: -10px;
+    cursor: pointer;
+}  
+.addme{
+    background-color: purple;
+  color: white;
+  cursor: pointer;
+margin-top: -10px;    
+}
+.addme:hover{
+    background-color:chartreuse;
+  color: white;
+}
+#panchwala{
+   display: flex; 
+
+  
+    margin: auto;
+
+   width:1200px;
+  
+   height: 450px;
+   margin-top: 10px;
+
+} 
+#panchwala>div{
+   width: 240px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+} 
+#panchwala+button{
+    margin-left: 650px;
+    height: 50px;
+    width: 150px;
+    font-size: 17px;
+border:1px solid gray;
+   border-radius: 8px;
+   margin-top: 50px;
+} 
+#flexcosmetics{
+    display: flex; 
+
+  
+margin: auto;
+
+width:1200px;
+
+height: 400px;
+margin-top: 10px;
+
+}
+#flexcosmetics>div{
+   width: 240px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+} 
+#flexcosmetics+button{
+    margin-left: 650px;
+    height: 50px;
+    width: 150px;
+    font-size: 17px;
+border:1px solid gray;
+   border-radius: 8px;
+   margin-top: 50px;
+} 
+#flexhomedecor{
+    display: flex; 
+
+  
+margin: auto;
+
+width:1200px;
+
+height: 400px;
+margin-top: 10px;
+
+}
+#flexhomedecor>div{
+   width: 240px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+} 
+#flexhomedecor+button{
+    margin-left: 650px;
+    height: 50px;
+    width: 150px;
+    font-size: 17px;
+border:1px solid gray;
+   border-radius: 8px;
+   margin-top: 50px;
+} 
+
+
+/* <!-- // #flexwalipicshome pic
+//    to append --> */
+.onlyimage{
+    box-shadow: none;
+    height: 250px;
+   
+} 
+.onlyimagegrid{
+    height: 70%;
+
+}
+   
+ #GOto{
+    color: black;
+        background-color: bisque;
+        height: 70px;
+        border-radius: 7px;
+        font-size: 16px;
+    font-weight: 400;
+text-align:center;
+box-sizing: border-box;
+margin-left: 1160px;
+width: 150px;
+cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color:black
+}
+.onlyimagecosme{
+    height:230px;
+}
+
+
+</style>
+</head>
+<body>
+    <div id="naVbar">
+        <div>
+            <img src="https://shop.indiamart.com/style/im_logo.jpg">
+            <div><h2>Shopping</h2></div>
+        </div>
+        <div>
+            <form id="form">
+               
+                <span class="unit">Shop<div class= "vertical"></div></span>
+                <input type="text" placeholder="What are you looking for?">
+                
+                <button type="submit">Search</button>
+               
+              </form>
+        </div>
+        
+        <div id="last">
+            <p>Post Bulk Requirement...(For large quantities)</p>
+             </div>
+    </div>
+ <div id="wears">
+<div>
+    <div class="round"><img src="https://shop.indiamart.com/style/ladies-wear.png"></div>
+    
+    <p>Ladies Wear</p>
+</div>
+
+<div>
+    <div class="round"><img src="https://shop.indiamart.com/style/men-wear.png"></div>
+    
+    <p>Men Wear</p>
+</div>
+
+<div>
+    <div class="round"><img src="https://shop.indiamart.com/style/footwear.png"></div>
+    
+    <p>Footwear</p>
+</div>
+
+<div>
+    <div class="round"><img src="https://shop.indiamart.com/style/cosmetics.png"></div>
+
+    <p>Cosmetics</p>
+</div>
+
+<div>
+    <div class="round"><img src="https://shop.indiamart.com/style/mobile-accessories.png"></div>
+    
+    <p>Mobile Accessories</p>
+</div>
+
+<div>
+    <div class="round"><img src="https://shop.indiamart.com/style/home-decor.png"></div>
+   
+    <p>Home Decor</p>
+</div>
+
+<div>
+    <div class="round"> <img src="https://shop.indiamart.com/style/artificial-jewellery.png"></div>
+   
+    <p>Artificial Jewellery</p>
+</div>
+
+<div>
+    <div class="round"><img src="https://shop.indiamart.com/style/fertilizer.png"></div>
+    
+    <p>Fertilizer</p>
+</div>
+
+<div>
+    <div class="round"><img src="https://shop.indiamart.com/style/light.png"></div>
+  
+    <p>Light</p>
+</div>
+
+<div>
+    <div class="round"><img src="https://shop.indiamart.com/style/industrial-chemicals.png"></div>
+    
+    <p>Industrial Chemicals</p>
+</div>
+ </div>
+<div id="Picles">
+<img src="image.png" height="400px" width="100%"/>
+
+</div>
+<button id="GOto"><a href="cart.html">Go To cart</a></button>
+<div class="uparka">
+<div class="Logowala">
+    <img src="https://shop.indiamart.com/style/ladies-wear.png"/>
+</div>
+<div class="likhnewala">
+    <h2>Ladies Wear</h2>
+</div>
+</div>
+<div id="eigthwala"></div>
+<button>View More</button>
+<div class="uparka">
+    <div class="Logowala">
+        <img src="https://shop.indiamart.com/style/men-wear.png"/>
+    </div>
+    <div class="likhnewala">
+        <h2>Mens Wear</h2>
+    </div>
+    </div>
+
+<div id="panchwala"></div>
+<button>View More</button>
+<div class="uparka">
+    <div class="Logowala">
+        <img src="https://shop.indiamart.com/style/footwear.png"/>
+    </div>
+    <div class="likhnewala">
+        <h2>Footwear</h2>
+    </div>
+    </div>
+    <div id="shoeseigthwala"></div>
+    <button>View More</button>
+   
+    <div class="uparka">
+        <div class="Logowala">
+            <img src="https://shop.indiamart.com/style/cosmetics.png"/>
+        </div>
+        <div class="likhnewala">
+            <h2>Cosmetics</h2>
+        </div>
+        </div>
+<div id="flexcosmetics"></div>
+<button>View More</button>
+<div class="uparka">
+    <div class="Logowala">
+        <img src="https://shop.indiamart.com/style/mobile-accessories.png"/>
+    </div>
+    <div class="likhnewala">
+        <h2>Mobile Accessories</h2>
+    </div>
+    </div>
+    <div id="gridmobile"></div>
+    <button>View More</button>
+
+    <div class="uparka">
+        <div class="Logowala">
+            <img src="https://shop.indiamart.com/style/home-decor.png"/>
+        </div>
+        <div class="likhnewala">
+            <h2>Home Decor</h2>
+        </div>
+        </div>
+        <div id="flexhomedecor"></div>
+
+
+
+
+
+    
+
+</body>
+<script>
+var griddata =[
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/6/HS/FW/YU/90086993/shdrs10204-1-1977da81-b45d-45b5-b270-bcbdfa3f4a64-500x500.jpg",
+       name:"Maroon Cuff Embroidered Gathered Dress",
+       company:"NOZ2TOZ",
+       price:"983",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/6/UQ/FI/DX/88399644/black-6b8b88f8-01de-4f44-96b5-256464f9652a-500x500.jpg",
+       name:"Pocket-9 Printed T-shirt",
+       company:"Yazhi Apparel",
+       price:" 999",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/1/OA/RZ/RZ/20345987/photo-2021-05-13-17-13-19-500x500.jpg",
+       name:"New Summer Bottom Wear R480C",
+       company:"Wama Trendz",
+       price:" 999",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/3/FB/KW/OD/89757443/303-a-500x500.jpg",
+       name:"Ritsila Women's Fit And Flare ",
+       company:"Ritsila Women'",
+       price:" 899",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/6/MO/OC/KA/10883763/17622859-1-500x500.jpg",
+       name:"Women White Printed Cotton T-shirt",
+       company:"AKR Industries Private Limited",
+       price:" 179",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/2/MR/MU/AO/1016518/btswhitewomen-500x500.jpg",
+       name:"BTS Printed Cotton Tshirts",
+       company:"Dorex Knitwears",
+       price:" 399",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/2/IA/CK/XQ/5444595/4-07a0cea3-4c6e-41c1-9ad5-f0bc22708fe0-500x500.jpg",
+       name:"Beige Solid Kurta",
+       company:"Guniaa",
+       price:" 1,099",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/4/KM/DL/ZR/37472949/xl-1956-tandul-original-imafkbqsfwhprgsn-500x500.png",
+       name:"Darzi Color Block Women Round Neck Red T-shirt",
+       company:"Laxmi Traders",
+       price:" 249",
+
+    },
+]
+var shoesdata=[
+      {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/4/UH/JV/KO/33805497/img-1891-500x500.jpg",
+       name:"Hautton Men's Stylish Light-weight Breathable Casual",
+       company:"Prak Overseas",
+       price:" 1,349",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/6/UW/PM/TB/130955569/1622905524460-41fzulhz-nl-originnm80prcnt-500x500.jpg",
+       name:"Trendy Synthetic Sneaker For Men",
+       company:"Booshop.In",
+       price:" 699",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/6/PQ/LN/YT/4120003/1622905547444-61kysod-qil-ul1168-originnm80prcnt-500x500.jpg",
+       name:"Trendy Synthetic Sneaker For Men",
+       company:"Ramshiv Exports",
+       price:" 735",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/6/DX/VR/IJ/49131531/image-8154ae1a-ac29-4976-ba4a-214b03272dd5-500x500.jpg",
+       name:"Men Gloss Sneakers",
+       company:"Men Gloss Sneakers",
+       price:" 1,299",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/4/SO/IR/LC/11568066/71rlgutwwpl-ul1500-500x500.jpg",
+       name:"Mr & Miss Star Combo House Slippers",
+       company:"United Brothers",
+       price:" 279",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/3/GD/GL/XD/148627789/img-5590-500x500.jpg",
+       name:"Women Black Criss Cross Strap Heel Sandals",
+       company:"Women Black Criss Cross Strap",
+       price:" 549",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/5/RE/BK/WF/148051309/1597392463680-1-18-1-originnm80prcnt-500x500.jpg",
+       name:"Designer Leatherette High Ankle Length Velcro White Shimmery",
+       company:"Goswami Agencies",
+       price:" 842",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/5/QL/DA/IZ/51228023/7-991def08-6bf9-4ab7-93b8-cccdc348380e-500x500.jpg",
+       name:"Latest Collection Stylish & Trendy Casual Sneakers Shoes",
+       company:"Zaptoe",
+       price:" 259",
+
+    },
+]
+
+var mobiledata=[
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/2/ZT/TZ/BY/29087327/yubingo-charming-lady-with-tiger-cool-phone-cover-for-asus-zenfone-3-max-zc520tl-u0196-500x500.jpg",
+       name:"Charming Lady Tiger Back cover",
+       company:"Yubingo Creations Private Limited",
+       price:"149",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/6/ZV/FT/PG/134041916/pocox2-bk-blue-500x500.jpg",
+       name:"Back Panel Cover For Poco X2",
+       company:"Rd Mobiles Solutions Private Limited",
+       price:"150",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/6/TX/TN/BI/34690685/front-60c51c65d55d1-apple-iphone-xr-500x500.jpg",
+       name:"Kick Corona",
+       company:"Mustt Designs",
+       price:"253",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/5/NF/GG/VS/152527331/nillkin-camshield-armor-case-for-apple-iphone-13-pro-without-logo-cutout-nillkin-1638261812-500x500.jpg",
+       name:"Nillkin CamShield Armor Case For Apple IPhone 13 Pro (Without LOGO Cutout)",
+       company:"Vinod Enterprise",
+       price:" 999",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/5/OC/OH/FZ/76923980/ip-mb-cc-106blue-500x500.jpg",
+       name:" Back Case Cover For Apple Iphone 7 ",
+       company:"Indian Petals",
+       price:"199",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/6/XO/YI/CI/109174743/dealsplant-cases-covers-glase-pro-by-uniq-for-iphone6-plus-6s-plus-360-full-protection-ultra-clearcase-11297156300875-500x500.jpg",
+       name:"Glase Pro By Uniq For IPhone6 Plus &6s Plus 360 Full Protection Ultra ClearCase ",
+       company:"Solai Traders",
+       price:"699",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/3/IJ/LY/OY/128584534/appleiphonesesiliconecase-pinksand-mxyk2zm-a-quicktech1-500x500.jpg",
+       name:" Apple iPhone SE Silicone Case | Pink Sand | MXYK2ZM/A",
+       company:"Quicktech",
+       price:" 1,299",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/5/RY/LQ/LA/86538515/iphone13front-elmo-500x500.jpg",
+       name:"Soft Silicone Transparent Printed Case Compatible With Iphone 13-moon",
+       company:"Best Cell Technology Llp",
+       price:" 399",
+
+    },
+]
+   
+var flexdata=[
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/1/DY/BD/VS/33805497/img-5027-500x500.jpg",
+       name:"Stiya Cotton Unisex Polo Tshirt",
+       company:"Prak Overseas",
+       price:" 449",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/6/TP/IZ/HV/10883763/urm006831p-500x500.jpg",
+       name:"Men Maroon & Melange Polo Neck T-shirt  ",
+       company:"AKR Industries Private",
+       price:" 289",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/3/CW/LM/VR/88399644/cc-express-20220215-0854370-9081131332618355-500x500.png",
+       name:"Round Neck Plain T-Shirt - Olive Green",
+       company:"Yazhi Apparel",
+       price:" 349",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/5/LG/GY/VU/52782818/styleno-6032-black-500x500.png",
+       name:"Sportz Fit Mens Half Sleeve Round Neck",
+       company:"Cowboy Stores",
+       price:" 199",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/2/EV/RW/VZ/5444595/10-94a78257-99b9-47b8-8972-4e8bb7fcaf35-500x500.jpg",
+       name:"Blue Checkered Cotton Shirt",
+       company:"Guniaa",
+       price:" 999",
+
+    },
+]
+var cosmeticsdata=[
+   { 
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/4/PI/GB/OZ/594443/1643131485-94-ma-live-como-fs-psp-m06-0821-3d-l-500x500.png",
+       name:"Schwarzkopf Live Permanent Colour +",
+       company:"3G Chemist",
+       price:" 1,250",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/5/LU/YA/SV/12757498/sblhaircolodarkbrown-500x500.jpg",
+       name:"Sbl Hair Color Dark Brown",
+       company:"Yourmedkart",
+       price:" 38",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/6/JV/YX/MS/9422220/ur-sugar-15ml-thermal-quick-building-uv-gel-acrylic-poly-extension-gel-nail-tips-uv-builder-jpg-640x640-128bdd75-0770-4c50-9fea-3332cd5d9d91-500x500.jpg",
+       name:"Matrix SoColor - 2NN 2.0",
+       company:"Ritu Jewels Private Limited",
+       price:" 290",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/5/DA/EJ/DN/141449392/61zbvoweegl-sl1000-500x500.jpg",
+       name:"15ml Thermal Quick Building Uv Gel Acrylic",
+       company:"My Online Collection Store",
+       price:" 1,299",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/5/LS/UZ/BP/63410393/862cc3753af51ce8390f38d5915d274b-248a6e08-d1b7-4fd7-9e58-2f762508353d-500x500.jpg",
+       name:"Shahnaz Husain Colourveda Natural Hair Colour (Blakish Brown) (100gm)",
+       company:"Green Leaf",
+       price:" 160",
+
+    },
+]
+var homedecordata=[
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/6/AO/DL/AF/26866112/remini20220113202252046-500x500.jpg",
+       name:"Raymond Royal King 100% Cotton Bedsheet",
+       company:"Vaibhavs Creations",
+       price:"789",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/1/XT/NX/BW/145144158/znh7-25-a216f58c-8d28-4759-a697-2fe636ed31f4-500x500.jpg",
+       name:"Black Prints 100% Cotton 1 Rajasthani Traditional King Size Bedsheet With 2 Pillow Cover ",
+       company:"Jaipur Prints",
+       price:"799",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/5/PL/CE/JX/21164203/205-4-500x500.jpg",
+       name:"Printed Floral Cotton 250 Tc Duvet Cover - Green",
+       company:"Aurave Decor Private Limited",
+       price:"1,319",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/6/RI/WM/JQ/2403926/zuhdyy7yna-500x500.jpg",
+       name:"Rajasthani Jaipuri Graceful Cotton Block Print Bed Sheets",
+       company:"Shiraz Handicrafts",
+       price:"1,099",
+
+    },
+    {
+       image_url:"https://5.imimg.com/data5/ECOM/Default/2022/6/IK/JL/EJ/29489760/image-b279334e-7b98-47f4-b544-957fbcf4b6dc-500x500.jpg",
+       name:"Super King Double Bedsheet",
+       company:"Village Creation",
+       price:"1,349",
+
+    },
+]
+    
+var cartData=JSON.parse(localStorage.getItem("cart")) || [];
+    griddata.map(function(elem){
+        var dibba=document.createElement("div")
+        dibba.setAttribute("id","sabhipicshai")
+      
+        var image=document.createElement("img")
+        image.src=elem.image_url
+        image.setAttribute("class","onlyimagegrid")
+        
+        var Name=document.createElement("p")
+        Name.innerText=elem.name;
+
+        var COmpanyname=document.createElement("p")
+        COmpanyname.innerText=elem.company;
+
+        var daam=document.createElement("h4")
+        daam.innerText=elem.price;
+
+        var flop=document.createElement("button")
+        flop.innerText="Add to cart"
+        flop.setAttribute("class","addme")
+        flop.addEventListener("click",function(){
+            hitme(elem);
+        })
+        dibba.append(image,Name,COmpanyname,daam,flop);
+        document.querySelector("#eigthwala").append(dibba)
+
+    })
+       
+function hitme(elem){
+    cartData.push(elem);
+    
+         localStorage.setItem("cart",JSON.stringify(cartData))
+         alert("Item Added to Cart")
+}
+var cartData=JSON.parse(localStorage.getItem("cart")) || [];
+    flexdata.map(function(elem){
+        var dibba=document.createElement("div")
+        dibba.setAttribute("id","flexwalipics")
+      
+        var image=document.createElement("img")
+        image.src=elem.image_url
+        image.setAttribute("class","onlyimage")
+        
+        var Name=document.createElement("p")
+        Name.innerText=elem.name;
+
+        var COmpanyname=document.createElement("p")
+        COmpanyname.innerText=elem.company;
+
+        var daam=document.createElement("h4")
+        daam.innerText=elem.price;
+
+        var flop=document.createElement("button")
+        flop.innerText="Add to cart"
+        flop.setAttribute("class","addme")
+        flop.addEventListener("click",function(){
+            hitme(elem);
+        })
+        dibba.append(image,Name,COmpanyname,daam,flop);
+        document.querySelector("#panchwala").append(dibba)
+
+    })
+       
+function hitme(elem){
+    cartData.push(elem);
+    
+         localStorage.setItem("cart",JSON.stringify(cartData))
+         alert("Item Added to Cart")
+}
+var cartData=JSON.parse(localStorage.getItem("cart")) || [];
+    shoesdata.map(function(elem){
+        var dabba=document.createElement("div")
+        dabba.setAttribute("id","sabhipicshaishoeski")
+      
+        var image=document.createElement("img")
+        image.src=elem.image_url
+        image.setAttribute("class","onlyimage")
+        
+        var Name=document.createElement("p")
+        Name.innerText=elem.name;
+
+        var COmpanyname=document.createElement("p")
+        COmpanyname.innerText=elem.company;
+
+        var daam=document.createElement("h4")
+        daam.innerText=elem.price;
+
+        var flop=document.createElement("button")
+        flop.innerText="Add to cart"
+        flop.setAttribute("class","addme")
+        flop.addEventListener("click",function(){
+            hitme(elem);
+        })
+        dabba.append(image,Name,COmpanyname,daam,flop);
+        document.querySelector("#shoeseigthwala").append(dabba)
+
+    })
+       
+function hitme(elem){
+    cartData.push(elem);
+    
+         localStorage.setItem("cart",JSON.stringify(cartData))
+         alert("Item Added to Cart")
+}
+var cartData=JSON.parse(localStorage.getItem("cart")) || [];
+cosmeticsdata.map(function(elem){
+        var dibba=document.createElement("div")
+        dibba.setAttribute("id","flexwalipicscosmetics")
+      
+        var image=document.createElement("img")
+        image.src=elem.image_url
+        image.setAttribute("class","onlyimagecosme")
+        
+        var Name=document.createElement("p")
+        Name.innerText=elem.name;
+
+        var COmpanyname=document.createElement("p")
+        COmpanyname.innerText=elem.company;
+
+        var daam=document.createElement("h4")
+        daam.innerText=elem.price;
+
+        var flop=document.createElement("button")
+        flop.innerText="Add to cart"
+        flop.setAttribute("class","addme")
+        flop.addEventListener("click",function(){
+            hitme(elem);
+        })
+        dibba.append(image,Name,COmpanyname,daam,flop);
+        document.querySelector("#flexcosmetics").append(dibba)
+
+    })
+       
+function hitme(elem){
+    cartData.push(elem);
+    
+         localStorage.setItem("cart",JSON.stringify(cartData))
+         alert("Item Added to Cart")
+}
+var cartData=JSON.parse(localStorage.getItem("cart")) || [];
+mobiledata.map(function(elem){
+        var dabba=document.createElement("div")
+        dabba.setAttribute("id","sabhipicshaimobileki")
+      
+        var image=document.createElement("img")
+        image.src=elem.image_url
+        image.setAttribute("class","onlyimage")
+        
+        var Name=document.createElement("p")
+        Name.innerText=elem.name;
+
+        var COmpanyname=document.createElement("p")
+        COmpanyname.innerText=elem.company;
+
+        var daam=document.createElement("h4")
+        daam.innerText=elem.price;
+
+        var flop=document.createElement("button")
+        flop.innerText="Add to cart"
+        flop.setAttribute("class","addme")
+        flop.addEventListener("click",function(){
+            hitme(elem);
+        })
+        dabba.append(image,Name,COmpanyname,daam,flop);
+        document.querySelector(" #gridmobile").append(dabba)
+
+    })
+       
+function hitme(elem){
+    cartData.push(elem);
+    
+         localStorage.setItem("cart",JSON.stringify(cartData))
+         alert("Item Added to Cart")
+}
+var cartData=JSON.parse(localStorage.getItem("cart")) || [];
+homedecordata.map(function(elem){
+        var dibba=document.createElement("div")
+        dibba.setAttribute("id","flexwalipicshome")
+      
+        var image=document.createElement("img")
+        image.src=elem.image_url
+        image.setAttribute("class","onlyimagecosme")
+        
+        var Name=document.createElement("p")
+        Name.innerText=elem.name;
+
+        var COmpanyname=document.createElement("p")
+        COmpanyname.innerText=elem.company;
+
+        var daam=document.createElement("h4")
+        daam.innerText=elem.price;
+
+        var flop=document.createElement("button")
+        flop.innerText="Add to cart"
+        flop.setAttribute("class","addme")
+        flop.addEventListener("click",function(){
+            hitme(elem);
+        })
+        dibba.append(image,Name,COmpanyname,daam,flop);
+        document.querySelector("#flexhomedecor").append(dibba)
+
+    })
+       
+function hitme(elem){
+    cartData.push(elem);
+    
+         localStorage.setItem("cart",JSON.stringify(cartData))
+         alert("Item Added to Cart")
+}
+
+
+
+
+
+
+
+</script>
+</html>
