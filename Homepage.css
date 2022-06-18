@@ -1,5 +1,28 @@
 body {
     background-color: rgb(233, 234, 236);
+       }
+#signin{
+text-decoration: none;
+background-color:rgb(46, 49, 146) ;
+color:white;
+    }
+#shopping{
+    text-decoration: none;
+    background-color:rgb(46, 49, 146) ;
+    color:white; 
+          }
+ #sell{
+    text-decoration: none;
+    background-color:rgb(46, 49, 146) ;
+    color:white; 
+     }
+  #help{
+    text-decoration: none;
+    background-color:rgb(46, 49, 146) ;
+    color:white; 
+      }
+.navbarkabut:hover{
+    background-color: pink;
      }
 #container {
     width: 97%;
@@ -1269,11 +1292,12 @@ ul {
         margin-left: 0;
     }
 } 
-    h2{
+    #h{
         font-size: 21px;
         font-weight: bold;
-        margin-left: 29px;
         font-family: sans-serif;
+        text-align: center;
+        
 
     }
 
