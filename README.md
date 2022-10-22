@@ -1,6 +1,6 @@
 # Blue Heaven Cosmetics.com
 
-> [Naukri](https://www.indiamart.com/blueheavencosmetics/) Blue Heaven Cosmetics was started in 1974 by two young brothers, company MD's Mr.Charanjit Singh and Mr. Gurnam Singh with big dreams and ambitions.
+> [Blue Heaven](https://www.indiamart.com/blueheavencosmetics/) Blue Heaven Cosmetics was started in 1974 by two young brothers, company MD's Mr.Charanjit Singh and Mr. Gurnam Singh with big dreams and ambitions.
 By virtue of their determination and commitment Blue Heaven Cosmetics has been able to experience such an eventful journey revolutionizing the Indian decorative cosmetics industry.
 
 > Cloned Blue Heaven Cosmetics.com website during the construct week at [Masai School](https://masaischool.com/). Completed the project in five days with a team of five members and implemented the maximum user centric functionality.
