@@ -40,13 +40,13 @@ By virtue of their determination and commitment Blue Heaven Cosmetics has been a
 #### Vivek Patel
 > Github: [Vivek Patel](https://github.com/svivekpatel) 
 
-#### Kailash chandra
-> Github: [sdibyanshu](https://github.com/sdibyanshu) 
+#### Dibyanshu
+> Github: [Dibyanshu](https://github.com/sdibyanshu) 
 
 #### Deepak
-> Github: [Musavvir Shaikh](https://github.com/dips2022) 
+> Github: [Deepak](https://github.com/dips2022) 
 
-#### Vinay Jayraj Barve
+#### Sangram Mahunta
 > Github: [Sangram Mahunta](https://github.com/Sangram150800) 
 
 
