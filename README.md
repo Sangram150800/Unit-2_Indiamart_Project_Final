@@ -34,7 +34,6 @@ By virtue of their determination and commitment Blue Heaven Cosmetics has been a
 
 
 # Contributor
-Manager : Sudhanshu Sharma
 #### Nandlal Shah
 > Github: [Nandlal955](https://github.com/NandlalShah955) 
 
