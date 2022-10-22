@@ -1,4 +1,4 @@
-# Blue Heaven Cosmetics.com
+# India Mart/Blue Heaven Cosmetics.com
 
 > [Blue Heaven](https://www.indiamart.com/blueheavencosmetics/) Blue Heaven Cosmetics was started in 1974 by two young brothers, company MD's Mr.Charanjit Singh and Mr. Gurnam Singh with big dreams and ambitions.
 By virtue of their determination and commitment Blue Heaven Cosmetics has been able to experience such an eventful journey revolutionizing the Indian decorative cosmetics industry.
