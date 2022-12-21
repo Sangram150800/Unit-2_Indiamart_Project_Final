@@ -5,7 +5,7 @@ By virtue of their determination and commitment Blue Heaven Cosmetics has been a
 
 > Cloned Blue Heaven Cosmetics.com website during the construct week at [Masai School](https://masaischool.com/). Completed the project in five days with a team of five members and implemented the maximum user centric functionality.
 
-## Overview of our work 👉 [Click here](https://coruscating-salmiakki-76b680.netlify.app/)
+## Deployed Link of our work 👉 [Click here](https://coruscating-salmiakki-76b680.netlify.app/)
 
 
 ## Landing Page 
