@@ -8,6 +8,24 @@ By virtue of their determination and commitment Blue Heaven Cosmetics has been a
 ## Overview of our work 👉 [Click here](https://coruscating-salmiakki-76b680.netlify.app/)
 
 
+## Landing Page 
+
+![image](https://www.linkpicture.com/q/Screenshot_20221222_002433.png)
+
+## About Section
+![image](https://www.linkpicture.com/q/Screenshot_20221222_002504.png)
+
+## Related Product
+![image](https://www.linkpicture.com/q/Screenshot_20221222_003551.png)
+
+## Footer
+![image](https://www.linkpicture.com/q/Screenshot_20221222_003521.png)
+
+## Shopping Page
+![image](https://i.postimg.cc/Kc02kFF7/Screenshot-20221222-002623.png)
+
+## Login Page
+![image](https://i.postimg.cc/zBWkmqjs/Screenshot-20221222-002718.png)
 
 # Features
 
